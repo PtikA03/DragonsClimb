@@ -38,5 +38,7 @@ func spawn_slash(dir):
 	slash.direction = dir
 	get_parent().add_child(slash)
 	slash.global_position = global_position + Vector2(0, 10)
+	
+	func
 				
 						
