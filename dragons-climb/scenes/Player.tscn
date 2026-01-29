@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://5o4oyco62wla"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5q5h1"]
+size = Vector2(32, 64)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5q5h1")
+
+[node name="SlashSpawn" type="Node2D" parent="."]
+position = Vector2(0, 10)

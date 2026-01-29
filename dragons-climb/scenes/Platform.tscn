@@ -9,3 +9,6 @@ size = Vector2(200, 40)
 shape = SubResource("RectangleShape2D_orc8j")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-99.00001, -20)
+scale = Vector2(2.0001006, 2.0526316)
+polygon = PackedVector2Array(0, 0, 0, 0, 99.495, 0.4871788, 99.494995, 19, 0, 19)
