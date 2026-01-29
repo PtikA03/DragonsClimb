@@ -16,4 +16,15 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_left"):
 		direction -= 1
 	if Input.is_action_pressed("move_right"):
-		direction += 1		
+		direction += 1
+		
+	if direction != 0:
+		facing = direction
+		
+	velocity.x = direction * speed
+	
+	if is_on_floor and Input.is_action_pressed("jump"):
+		velocity.y = jump_force
+		
+	if Input	
+						
