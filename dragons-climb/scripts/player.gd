@@ -23,8 +23,15 @@ func _physics_process(delta):
 		
 	velocity.x = direction * speed
 	
-	if is_on_floor and Input.is_action_pressed("jump"):
+	if is_on_floor and Input.is_action_just_pressed("jump"):
 		velocity.y = jump_force
 		
-	if Input	
+	if Input	.is_action_just_pressed("attack_left"):
+		spawn_slash(-1)
+	if Input.is_action_just_pressed("attack_right"):
+		spawn_slash(1)
+		
+	move_and_slide()
+	
+			
 						
