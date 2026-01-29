@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bbgqwil75kg0b"]
+
+[node name="Hud" type="CanvasLayer"]
+
+[node name="LivesLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BossLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
