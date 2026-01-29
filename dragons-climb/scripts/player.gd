@@ -33,5 +33,10 @@ func _physics_process(delta):
 		
 	move_and_slide()
 	
-			
+func spawn_slash(dir):
+	var slash = preload("res://scenes/actors/Slash.tscn").instantate()
+	slash.direction = dir
+	get_parent().add_child(slash)
+	slash.global_position = global_position + Vector2(0, 10)
+				
 						
