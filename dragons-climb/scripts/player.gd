@@ -39,15 +39,15 @@ func spawn_slash(dir):
 	get_parent().add_child(slash)
 	slash.global_position = global_position + Vector2(0, 10)
 	
-func take_damage():
+func take_damage(amount: int = 1) -> void:
 	if invulnerable:
 		return
-	
+
 	invulnerable = true
-	Game.lives -= 1
+	Game.lives -= amount
 	
-	if Game.lives <= 0:
-		get_tree().reload_current_scene()
+	if Game.lives < 0:
+		Game.lives = 0
 		
 	await get_tree().create_timer(0.6).timeout
 	invulnerable = false				

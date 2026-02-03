@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://drms0kngap6u6"]
+[gd_scene load_steps=5 format=3 uid="uid://drms0kngap6u6"]
 
 [ext_resource type="PackedScene" uid="uid://c23xi1uh2t4or" path="res://scenes/actors/Platform.tscn" id="1_u7w06"]
 [ext_resource type="PackedScene" uid="uid://5o4oyco62wla" path="res://scenes/actors/Player.tscn" id="2_r26h7"]
 [ext_resource type="PackedScene" uid="uid://bbgqwil75kg0b" path="res://scenes/ui/HUD.tscn" id="3_r26h7"]
+[ext_resource type="PackedScene" uid="uid://7hchupe3fsf2" path="res://scenes/props/Hazard.tscn" id="4_x5c88"]
 
 [node name="Level2" type="Node2D"]
 
@@ -31,3 +32,15 @@ position = Vector2(1009, 396)
 
 [node name="Platform7" parent="." instance=ExtResource("1_u7w06")]
 position = Vector2(931, 597)
+
+[node name="Hazard2" parent="." instance=ExtResource("4_x5c88")]
+position = Vector2(262, 587)
+
+[node name="Hazard3" parent="." instance=ExtResource("4_x5c88")]
+position = Vector2(211, 468)
+
+[node name="Hazard4" parent="." instance=ExtResource("4_x5c88")]
+position = Vector2(490, 522)
+
+[node name="Hazard5" parent="." instance=ExtResource("4_x5c88")]
+position = Vector2(787, 487)

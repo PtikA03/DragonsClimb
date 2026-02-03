@@ -1,8 +1,11 @@
 extends Area2D
 
-func _ready():
-	body_entered.connect(on_body)
-	
-func on_body(body):
-	if body.has_method("take_damage"):
-		body.take_damage()	
+@export var damage_amount: int = 1
+
+func _ready() -> void:
+  body_entered.connect(_on_body_entered)
+
+func _on_body_entered(body: Node) -> void:
+ if body.is_in_group("player"):
+  if body.has_method("take_damage"):
+   body.take_damage(damage_amount)
