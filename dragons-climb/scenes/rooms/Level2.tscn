@@ -1,3 +1,33 @@
-[gd_scene format=3 uid="uid://drms0kngap6u6"]
+[gd_scene load_steps=4 format=3 uid="uid://drms0kngap6u6"]
+
+[ext_resource type="PackedScene" uid="uid://c23xi1uh2t4or" path="res://scenes/actors/Platform.tscn" id="1_u7w06"]
+[ext_resource type="PackedScene" uid="uid://5o4oyco62wla" path="res://scenes/actors/Player.tscn" id="2_r26h7"]
+[ext_resource type="PackedScene" uid="uid://bbgqwil75kg0b" path="res://scenes/ui/HUD.tscn" id="3_r26h7"]
 
 [node name="Level2" type="Node2D"]
+
+[node name="Platform" parent="." instance=ExtResource("1_u7w06")]
+position = Vector2(115, 702)
+
+[node name="Player" parent="." instance=ExtResource("2_r26h7")]
+position = Vector2(144, 650)
+
+[node name="Platform2" parent="." instance=ExtResource("1_u7w06")]
+position = Vector2(402, 698)
+
+[node name="Platform3" parent="." instance=ExtResource("1_u7w06")]
+position = Vector2(708, 633)
+
+[node name="Platform4" parent="." instance=ExtResource("1_u7w06")]
+position = Vector2(455, 576)
+
+[node name="Platform5" parent="." instance=ExtResource("1_u7w06")]
+position = Vector2(732, 402)
+
+[node name="Platform6" parent="." instance=ExtResource("1_u7w06")]
+position = Vector2(1009, 396)
+
+[node name="Hud" parent="." instance=ExtResource("3_r26h7")]
+
+[node name="Platform7" parent="." instance=ExtResource("1_u7w06")]
+position = Vector2(931, 597)

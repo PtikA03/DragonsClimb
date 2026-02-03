@@ -3,8 +3,12 @@
 [node name="Hud" type="CanvasLayer"]
 
 [node name="LivesLabel" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+anchors_preset = -1
+anchor_right = 0.011000001
+anchor_bottom = 0.008
+offset_right = 127.92
+offset_bottom = 41.239998
+text = "Lives: 5"
 
 [node name="BossLabel" type="Label" parent="."]
 offset_right = 40.0

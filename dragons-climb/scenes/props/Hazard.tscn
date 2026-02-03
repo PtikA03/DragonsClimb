@@ -1,7 +1,17 @@
-[gd_scene format=3 uid="uid://7hchupe3fsf2"]
+[gd_scene load_steps=3 format=3 uid="uid://7hchupe3fsf2"]
+
+[ext_resource type="Script" uid="uid://dkb4eukf3w5h5" path="res://scripts/hazard.gd" id="1_ppvpc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jfphk"]
+size = Vector2(515, 421)
 
 [node name="Hazard" type="Area2D"]
+script = ExtResource("1_ppvpc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(247.5, 200.5)
+shape = SubResource("RectangleShape2D_jfphk")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0, 1, 1, 1)
+polygon = PackedVector2Array(28, 90, 28, 397, 495, 401, 302, 65)

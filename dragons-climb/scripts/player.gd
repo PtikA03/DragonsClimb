@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var speed := 250.0
 @export var jump_force := -420.0
-@export var gravity := 1200.0
+@export var gravity := 1000.0
 
 
 var facing := 1
@@ -34,7 +34,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 func spawn_slash(dir):
-	var slash = preload("res://scenes/actors/Slash.tscn").instantate()
+	var slash = preload("res://scenes/actors/Slash.tscn").instantiate()
 	slash.direction = dir
 	get_parent().add_child(slash)
 	slash.global_position = global_position + Vector2(0, 10)

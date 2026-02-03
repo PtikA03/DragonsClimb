@@ -1,10 +1,22 @@
-[gd_scene format=3 uid="uid://dgcg1j4pii4h5"]
+[gd_scene load_steps=3 format=3 uid="uid://dgcg1j4pii4h5"]
+
+[ext_resource type="Script" uid="uid://dr3waxcchjolb" path="res://scripts/slash.gd" id="1_0y5cs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mk413"]
+size = Vector2(53, 13)
 
 [node name="Slash" type="Area2D"]
+script = ExtResource("1_0y5cs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(27, 7)
+shape = SubResource("RectangleShape2D_mk413")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-168, -33)
+scale = Vector2(6.2222223, 1.75)
+color = Color(1, 1, 0.03529412, 1)
+polygon = PackedVector2Array(27, 19, 36, 20, 35, 27, 27, 27)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2
